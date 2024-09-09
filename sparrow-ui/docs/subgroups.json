@@ -1,0 +1,19 @@
+{
+  "subgroups": [
+    {
+      "id": 3,
+      "name": "subitem_row3",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "name": "subitem_row2",
+      "description": ""
+    },
+    {
+      "id": 1,
+      "name": "subitem_row1",
+      "description": "Sub Item Row 1"
+    }
+  ]
+}

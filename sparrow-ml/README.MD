@@ -13,9 +13,7 @@ pip install -r requirements.txt
 ## Usage
 
 1. Run [**sparrow_finetuning_donut_v1.ipynb**](https://colab.research.google.com/drive/1-v1VE2Oow_klQjO-ETGyxuIP4ebIjRGC?usp=sharing) notebook to finetune Donut model on your data with **PyTorch Lighting**. This notebook shouldn't be used in MLOps pipeline, it is for research purposes.
-
 2. Run [**sparrow_inference_donut_v1.ipynb**](https://colab.research.google.com/drive/1eCFAIst7mFOQcib3MzUdgHGpitS1sh8y?usp=sharing) notebook to test model (fine-tuned with **PyTorch Lighting**) inference. This notebook shouldn't be used in MLOps pipeline, it is for research purposes.
-
 3. Run [**sparrow_inference_standalone_donut_v1.ipynb**](https://colab.research.google.com/drive/1OoX1llhhNWeI9j8ajJRm7dbPFA3ZlFg5?usp=sharing) notebook to test model (fine-tuned with **PyTorch Lighting**) inference with external image. This notebook shouldn't be used in MLOps pipeline, it is for research purposes.
 
 ## FastAPI Service
@@ -155,16 +153,14 @@ Navigate to 'cli' folder and run 'chmod +x sparrow'. Add to system path to make 
 ```
 ./sparrow --api_url https://katanaml-org-sparrow-ml.hf.space/api-training/v1/sparrow-ml/evaluate \
           --type evaluate \
-          --model_in_use donut / 
+          --model_in_use donut /
           --sparrow_key <key>
 ```
 
 ## Deploy to Hugging Face Spaces
 
 1. Create new space - https://huggingface.co/spaces. Follow instructions from readme doc
-
 2. Create huggingface_key and sparrow_key secret in space settings
-
 3. In config.py, replace huggingface_key and sparrow_key variable with this line of code
 
 ```
@@ -190,13 +186,11 @@ https://katanaml-org-sparrow-ml.hf.space/api/v1/sparrow-ml/docs
 ## Resources
 
 1. [Invoices Dataset for Donut v1](https://huggingface.co/datasets/katanaml-org/invoices-donut-data-v1)
-
 2. [Invoices Model for Donut v1](https://huggingface.co/katanaml-org/invoices-donut-model-v1)
 
 ## References
 
 1. [Transformers Tutorials](https://github.com/NielsRogge/Transformers-Tutorials/tree/master/Donut) for Donut
-
 2. [Document AI: Fine-tuning Donut for document-parsing using Hugging Face Transformers](https://www.philschmid.de/fine-tuning-donut) blog
 
 ## Author

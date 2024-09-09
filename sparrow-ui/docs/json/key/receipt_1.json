@@ -1,0 +1,27 @@
+{
+  "header": {
+    "restaurant_name": "Yakiniku Like Grand Indonesia",
+    "date": "27-01-2024 12:21"
+  },
+  "items": [
+    {
+      "item_qty": "1",
+      "item_name": "COUPLE SET 300GR",
+      "item_price": "269.000"
+    },
+    {
+      "item_qty": "1",
+      "item_name": "OCHA COLD (Free Refill)",
+      "item_price": "15.000"
+    },
+    {
+      "item_qty": "1",
+      "item_name": "OCHA HOT (Free Refill)",
+      "item_price": "15.000"
+    }
+  ],
+  "subtotal": "299.000",
+  "service": "8.970",
+  "tax": "30.797",
+  "total": "338.767"
+}

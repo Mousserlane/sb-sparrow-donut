@@ -1,16 +1,6 @@
 {
   "labels": [
     {
-      "id": 20,
-      "name": "service",
-      "description": ""
-    },
-    {
-      "id": 19,
-      "name": "tax",
-      "description": ""
-    },
-    {
       "id": 18,
       "name": "restaurant_name",
       "description": ""

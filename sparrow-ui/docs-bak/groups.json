@@ -1,36 +1,6 @@
 {
   "groups": [
     {
-      "id": 18,
-      "name": "sub_items_row3_items_row2",
-      "description": "Sub items in row 3 in items row 2"
-    },
-    {
-      "id": 17,
-      "name": "sub_items_row2_items_row2",
-      "description": "Sub items in row 2 in items row 2"
-    },
-    {
-      "id": 16,
-      "name": "sub_items_row1_items_row2",
-      "description": "Sub items in row 1 in items row 2"
-    },
-    {
-      "id": 15,
-      "name": "sub_items_row3_items_row1",
-      "description": "Sub items in row 3 in items row 1"
-    },
-    {
-      "id": 14,
-      "name": "sub_items_row2_items_row1",
-      "description": "Sub items in row 2 in items row 1"
-    },
-    {
-      "id": 13,
-      "name": "sub_items_row1_items_row1",
-      "description": "Sub items in row 1 in items row 1"
-    },
-    {
       "id": 12,
       "name": "header",
       "description": "Header"
