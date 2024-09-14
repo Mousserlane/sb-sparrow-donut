@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "version": "v0.1",
+    "split": "train",
+    "image_id": 42,
+    "image_size": {
+      "width": 720,
+      "height": 1600
+    }
+  },
+  "words": []
+}

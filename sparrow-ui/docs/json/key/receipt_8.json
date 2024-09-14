@@ -1,0 +1,65 @@
+{
+  "header": {
+    "restaurant_name": "PENANG BISTRO",
+    "date": "01 December 2023 20:13:33"
+  },
+  "items": [
+    {
+      "item_name": "SINGAPORE SOTONG",
+      "item_qty": "1",
+      "item_price": "81.000"
+    },
+    {
+      "item_name": "MANGO CHICKEN",
+      "item_qty": "1",
+      "item_price": "89.000"
+    },
+    {
+      "item_name": "NASI PUTIH",
+      "item_qty": "2",
+      "item_price": "34.000"
+    },
+    {
+      "item_name": "NYONYA NASI LEMAK",
+      "item_qty": "1",
+      "item_price": "79.000"
+    },
+    {
+      "item_name": "PENANG MEE SHUA",
+      "item_qty": "1",
+      "item_price": "72.000"
+    },
+    {
+      "item_name": "ICE TEA",
+      "item_qty": "1",
+      "item_price": "19.000"
+    },
+    {
+      "item_name": "AQUA REFLECTIONS",
+      "item_qty": "1",
+      "item_price": "35.000"
+    },
+    {
+      "item_name": "TEH TARIK",
+      "item_qty": "1",
+      "item_price": "35.000"
+    },
+    {
+      "item_name": "19.000",
+      "item_qty": "1"
+    },
+    {
+      "item_name": "FRIED MANTOU",
+      "item_qty": "1",
+      "item_price": "31.000"
+    },
+    {
+      "item_name": "96.000",
+      "item_qty": "1"
+    }
+  ],
+  "subtotal": "590.000",
+  "service": "41.300",
+  "tax": "63.130",
+  "total": "694.430"
+}

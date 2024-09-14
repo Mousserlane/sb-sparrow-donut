@@ -1,0 +1,19 @@
+{
+  "restaurant_name": "RESTORAN SEDERHANA",
+  "date": "26-12-2023 12:37",
+  "items": [
+    {
+      "item_qty": "1",
+      "item_name": "SATE KETUPAT",
+      "item_price": "28.000"
+    },
+    {
+      "item_qty": "2",
+      "item_name": "NASI GORENG",
+      "item_price": "60.000"
+    }
+  ],
+  "subtotal": "88.000",
+  "tax": "8.800",
+  "total": "96.800"
+}

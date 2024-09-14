@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "version": "v1.0",
+    "split": "train",
+    "image_id": 10,
+    "image_size": {
+      "width": 720,
+      "height": 1600
+    }
+  },
+  "words": [
+    {
+      "rect": {
+        "x1": 90,
+        "y1": 616,
+        "x2": 256,
+        "y2": 648
+      },
+      "value": "04.12.23-12:18",
+      "label": "header:date"
+    },
+    {
+      "rect": {
+        "x1": 80,
+        "y1": 670,
+        "x2": 331,
+        "y2": 700
+      },
+      "value": "INDOMI GORENG SPC 80",
+      "label": "items_row1:item_name"
+    },
+    {
+      "rect": {
+        "x1": 371,
+        "y1": 671,
+        "x2": 396,
+        "y2": 702
+      },
+      "value": "2",
+      "label": "items_row1:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 421,
+        "y1": 670,
+        "x2": 483,
+        "y2": 701
+      },
+      "value": "4000",
+      "label": "items_row1:item_subtotal"
+    },
+    {
+      "rect": {
+        "x1": 529,
+        "y1": 673,
+        "x2": 608,
+        "y2": 704
+      },
+      "value": "8.000",
+      "label": "items_row1:item_price"
+    },
+    {
+      "rect": {
+        "x1": 83,
+        "y1": 706,
+        "x2": 332,
+        "y2": 733
+      },
+      "value": "INDOMI SOTO MIE 70GR",
+      "label": "items_row2:item_name"
+    },
+    {
+      "rect": {
+        "x1": 372,
+        "y1": 706,
+        "x2": 397,
+        "y2": 730
+      },
+      "value": "2",
+      "label": "items_row2:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 421,
+        "y1": 705,
+        "x2": 484,
+        "y2": 733
+      },
+      "value": "3000",
+      "label": "items_row2:item_subtotal"
+    },
+    {
+      "rect": {
+        "x1": 531,
+        "y1": 707,
+        "x2": 603,
+        "y2": 732
+      },
+      "value": "6.000",
+      "label": "items_row2:item_price"
+    },
+    {
+      "rect": {
+        "x1": 83,
+        "y1": 733,
+        "x2": 337,
+        "y2": 768
+      },
+      "value": "INDOMI JMB AYM PG127",
+      "label": "items_row3:item_name"
+    },
+    {
+      "rect": {
+        "x1": 371,
+        "y1": 735,
+        "x2": 399,
+        "y2": 761
+      },
+      "value": "1",
+      "label": "items_row3:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 420,
+        "y1": 735,
+        "x2": 482,
+        "y2": 766
+      },
+      "value": "5000",
+      "label": "items_row3:item_subtotal"
+    },
+    {
+      "rect": {
+        "x1": 526,
+        "y1": 735,
+        "x2": 604,
+        "y2": 769
+      },
+      "value": "5.000",
+      "label": "items_row3:item_price"
+    },
+    {
+      "rect": {
+        "x1": 508,
+        "y1": 845,
+        "x2": 606,
+        "y2": 881
+      },
+      "value": "19.000",
+      "label": "total"
+    }
+  ]
+}

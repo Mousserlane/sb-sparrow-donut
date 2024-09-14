@@ -1,0 +1,50 @@
+{
+  "header": {
+    "restaurant_name": "The Pancake.Co",
+    "date": "10-12-2923 14:19"
+  },
+  "items": [
+    {
+      "item_name": "Chicken Katsu Curry",
+      "item_qty": "1",
+      "item_subtotal": "80.000",
+      "item_price": "80.000"
+    },
+    {
+      "item_name": "Add On Melted Cheese",
+      "item_qty": "1",
+      "item_subtotal": "20.000",
+      "item_price": "20.000"
+    },
+    {
+      "item_name": "Equil Mineral Water",
+      "item_qty": "1",
+      "item_subtotal": "35.000",
+      "item_price": "35.000"
+    },
+    {
+      "item_name": "Ice Aren Kohi",
+      "item_qty": "1",
+      "item_subtotal": "35.000",
+      "item_price": "35.000"
+    },
+    {
+      "item_name": "Osaka Beef Curry Omurice",
+      "item_qty": "1",
+      "item_subtotal": "95.000",
+      "item_price": "95.000"
+    },
+    {
+      "item_name": "Original Pancake Single",
+      "item_qty": "1",
+      "item_subtotal": "55.000",
+      "item_price": "55.000"
+    }
+  ],
+  "": {
+    "subtotal": "320.000"
+  },
+  "service": "24.000",
+  "tax": "34.400",
+  "total": "378.400"
+}

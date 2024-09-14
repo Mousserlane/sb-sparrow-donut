@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "version": "v1.0",
+    "split": "train",
+    "image_id": 6,
+    "image_size": {
+      "width": 720,
+      "height": 1600
+    }
+  },
+  "words": [
+    {
+      "rect": {
+        "x1": 227,
+        "y1": 394,
+        "x2": 461,
+        "y2": 420
+      },
+      "value": "INFORMA CASABLANCA",
+      "label": "header:restaurant_name"
+    },
+    {
+      "rect": {
+        "x1": 358,
+        "y1": 561,
+        "x2": 566,
+        "y2": 585
+      },
+      "value": "01 Dec 2023 20:36",
+      "label": "header:date"
+    },
+    {
+      "rect": {
+        "x1": 231,
+        "y1": 650,
+        "x2": 513,
+        "y2": 678
+      },
+      "value": "OCTA SHELF 4 TIER L50 OAK",
+      "label": "items_row1:item_name"
+    },
+    {
+      "rect": {
+        "x1": 140,
+        "y1": 686,
+        "x2": 188,
+        "y2": 725
+      },
+      "value": "1",
+      "label": "items_row1:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 253,
+        "y1": 681,
+        "x2": 342,
+        "y2": 716
+      },
+      "value": "749.000",
+      "label": "items_row1:item_subtotal"
+    },
+    {
+      "rect": {
+        "x1": 451,
+        "y1": 677,
+        "x2": 545,
+        "y2": 704
+      },
+      "value": "749.000",
+      "label": "items_row1:item_price"
+    },
+    {
+      "rect": {
+        "x1": 470,
+        "y1": 720,
+        "x2": 564,
+        "y2": 757
+      },
+      "value": "749.000",
+      "label": "total"
+    }
+  ]
+}

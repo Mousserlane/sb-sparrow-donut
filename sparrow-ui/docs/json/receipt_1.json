@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "version": "v1.0",
+    "split": "train",
+    "image_id": 21,
+    "image_size": {
+      "width": 720,
+      "height": 1600
+    }
+  },
+  "words": [
+    {
+      "rect": {
+        "x1": 143,
+        "y1": 536,
+        "x2": 557,
+        "y2": 577
+      },
+      "value": "Yakiniku Like Grand Indonesia",
+      "label": "header:restaurant_name"
+    },
+    {
+      "rect": {
+        "x1": 210,
+        "y1": 595,
+        "x2": 444,
+        "y2": 638
+      },
+      "value": "27-01-2024 12:21",
+      "label": "header:date"
+    },
+    {
+      "rect": {
+        "x1": 30,
+        "y1": 859,
+        "x2": 64,
+        "y2": 892
+      },
+      "value": "1",
+      "label": "items_row1:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 109,
+        "y1": 855,
+        "x2": 350,
+        "y2": 894
+      },
+      "value": "COUPLE SET 300GR",
+      "label": "items_row1:item_name"
+    },
+    {
+      "rect": {
+        "x1": 585,
+        "y1": 846,
+        "x2": 702,
+        "y2": 890
+      },
+      "value": "269.000",
+      "label": "items_row1:item_price"
+    },
+    {
+      "rect": {
+        "x1": 108,
+        "y1": 895,
+        "x2": 139,
+        "y2": 932
+      },
+      "value": "1",
+      "label": "items_row1:subitem_row1:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 160,
+        "y1": 893,
+        "x2": 498,
+        "y2": 928
+      },
+      "value": "OCHA COLD (Free Refill)",
+      "label": "items_row1:subitem_row1:item_name"
+    },
+    {
+      "rect": {
+        "x1": 588,
+        "y1": 893,
+        "x2": 704,
+        "y2": 923
+      },
+      "value": "15.000",
+      "label": "items_row1:subitem_row1:item_price"
+    },
+    {
+      "rect": {
+        "x1": 33,
+        "y1": 924,
+        "x2": 59,
+        "y2": 963
+      },
+      "value": "1",
+      "label": "items_row2:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 107,
+        "y1": 928,
+        "x2": 437,
+        "y2": 961
+      },
+      "value": "OCHA HOT (Free Refill)",
+      "label": "items_row2:item_name"
+    },
+    {
+      "rect": {
+        "x1": 591,
+        "y1": 926,
+        "x2": 707,
+        "y2": 958
+      },
+      "value": "15.000",
+      "label": "items_row2:item_price"
+    },
+    {
+      "rect": {
+        "x1": 360,
+        "y1": 1021,
+        "x2": 494,
+        "y2": 1055
+      },
+      "value": "Subtotal",
+      "label": ""
+    },
+    {
+      "rect": {
+        "x1": 582,
+        "y1": 1023,
+        "x2": 700,
+        "y2": 1056
+      },
+      "value": "299.000",
+      "label": "subtotal"
+    },
+    {
+      "rect": {
+        "x1": 439,
+        "y1": 1060,
+        "x2": 501,
+        "y2": 1094
+      },
+      "value": "SC",
+      "label": ""
+    },
+    {
+      "rect": {
+        "x1": 594,
+        "y1": 1061,
+        "x2": 703,
+        "y2": 1085
+      },
+      "value": "8.970",
+      "label": "service"
+    },
+    {
+      "rect": {
+        "x1": 434,
+        "y1": 1098,
+        "x2": 494,
+        "y2": 1124
+      },
+      "value": "PB1",
+      "label": ""
+    },
+    {
+      "rect": {
+        "x1": 595,
+        "y1": 1092,
+        "x2": 701,
+        "y2": 1121
+      },
+      "value": "30.797",
+      "label": "tax"
+    },
+    {
+      "rect": {
+        "x1": 323,
+        "y1": 1151,
+        "x2": 494,
+        "y2": 1219
+      },
+      "value": "Grand Total",
+      "label": ""
+    },
+    {
+      "rect": {
+        "x1": 584,
+        "y1": 1150,
+        "x2": 688,
+        "y2": 1194
+      },
+      "value": "338.767",
+      "label": "total"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "labels": [
+    {
+      "id": 18,
+      "name": "restaurant_name",
+      "description": ""
+    },
+    {
+      "id": 17,
+      "name": "item_name",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "name": "date",
+      "description": "Invoice Date"
+    },
+    {
+      "id": 8,
+      "name": "item_desc",
+      "description": "Item Description"
+    },
+    {
+      "id": 9,
+      "name": "item_qty",
+      "description": "Item Quantity"
+    },
+    {
+      "id": 10,
+      "name": "item_price",
+      "description": "Item Price"
+    },
+    {
+      "id": 12,
+      "name": "item_vat",
+      "description": "Item VAT"
+    },
+    {
+      "id": 13,
+      "name": "item_gross_worth",
+      "description": "Item Gross Worth"
+    },
+    {
+      "id": 14,
+      "name": "total",
+      "description": "Total Net Worth"
+    },
+    {
+      "id": 15,
+      "name": "total_vat",
+      "description": "Total VAT"
+    },
+    {
+      "id": 16,
+      "name": "subtotal",
+      "description": "Total Gross Worth"
+    }
+  ]
+}

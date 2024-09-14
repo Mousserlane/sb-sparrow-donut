@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "version": "v1.0",
+    "split": "train",
+    "image_id": 7,
+    "image_size": {
+      "width": 720,
+      "height": 1600
+    }
+  },
+  "words": [
+    {
+      "rect": {
+        "x1": 205,
+        "y1": 478,
+        "x2": 441,
+        "y2": 549
+      },
+      "value": "Uji Matcha",
+      "label": "header:restaurant_name"
+    },
+    {
+      "rect": {
+        "x1": 82,
+        "y1": 763,
+        "x2": 605,
+        "y2": 821
+      },
+      "value": "06 Dec 2023 12:47",
+      "label": "header:date"
+    },
+    {
+      "rect": {
+        "x1": 88,
+        "y1": 975,
+        "x2": 332,
+        "y2": 1024
+      },
+      "value": "Ice Cream Matcha Latte",
+      "label": "items_row1:item_name"
+    },
+    {
+      "rect": {
+        "x1": 353,
+        "y1": 1010,
+        "x2": 380,
+        "y2": 1040
+      },
+      "value": "1",
+      "label": "items_row1:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 531,
+        "y1": 1005,
+        "x2": 602,
+        "y2": 1045
+      },
+      "value": "53.000",
+      "label": "items_row1:item_price"
+    },
+    {
+      "rect": {
+        "x1": 72,
+        "y1": 1066,
+        "x2": 165,
+        "y2": 1105
+      },
+      "value": "Subtotal",
+      "label": ""
+    },
+    {
+      "rect": {
+        "x1": 527,
+        "y1": 1099,
+        "x2": 601,
+        "y2": 1126
+      },
+      "value": "53.000",
+      "label": ":subtotal"
+    },
+    {
+      "rect": {
+        "x1": 73,
+        "y1": 1106,
+        "x2": 181,
+        "y2": 1131
+      },
+      "value": "PB1 (10%)",
+      "label": ""
+    },
+    {
+      "rect": {
+        "x1": 541,
+        "y1": 1132,
+        "x2": 595,
+        "y2": 1159
+      },
+      "value": "5.300",
+      "label": "tax"
+    },
+    {
+      "rect": {
+        "x1": 73,
+        "y1": 1151,
+        "x2": 136,
+        "y2": 1188
+      },
+      "value": "Total",
+      "label": ""
+    },
+    {
+      "rect": {
+        "x1": 529,
+        "y1": 1174,
+        "x2": 594,
+        "y2": 1210
+      },
+      "value": "58.300",
+      "label": "total"
+    }
+  ]
+}

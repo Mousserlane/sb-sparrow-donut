@@ -1,0 +1,443 @@
+{
+  "meta": {
+    "version": "v0.1",
+    "split": "train",
+    "image_id": 9,
+    "image_size": {
+      "width": 720,
+      "height": 1600
+    }
+  },
+  "words": [
+    {
+      "rect": {
+        "x1": 198,
+        "y1": 365,
+        "x2": 484,
+        "y2": 420
+      },
+      "value": "penangbistro",
+      "label": ""
+    },
+    {
+      "rect": {
+        "x1": 251,
+        "y1": 428,
+        "x2": 423,
+        "y2": 448
+      },
+      "value": "PENANG BISTRO",
+      "label": "header:restaurant_name"
+    },
+    {
+      "rect": {
+        "x1": 217,
+        "y1": 612,
+        "x2": 472,
+        "y2": 640
+      },
+      "value": "01 December 2023 20:13:33",
+      "label": "header:date"
+    },
+    {
+      "rect": {
+        "x1": 171,
+        "y1": 769,
+        "x2": 366,
+        "y2": 794
+      },
+      "value": "SINGAPORE SOTONG",
+      "label": "items_row1:item_name"
+    },
+    {
+      "rect": {
+        "x1": 434,
+        "y1": 758,
+        "x2": 461,
+        "y2": 787
+      },
+      "value": "1",
+      "label": "items_row1:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 496,
+        "y1": 754,
+        "x2": 574,
+        "y2": 781
+      },
+      "value": "81.000",
+      "label": "items_row1:item_price"
+    },
+    {
+      "rect": {
+        "x1": 170,
+        "y1": 797,
+        "x2": 339,
+        "y2": 816
+      },
+      "value": "MANGO CHICKEN",
+      "label": "items_row2:item_name"
+    },
+    {
+      "rect": {
+        "x1": 435,
+        "y1": 791,
+        "x2": 462,
+        "y2": 811
+      },
+      "value": "1",
+      "label": "items_row2:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 496,
+        "y1": 783,
+        "x2": 578,
+        "y2": 805
+      },
+      "value": "89.000",
+      "label": "items_row2:item_price"
+    },
+    {
+      "rect": {
+        "x1": 171,
+        "y1": 818,
+        "x2": 289,
+        "y2": 844
+      },
+      "value": "NASI PUTIH",
+      "label": "items_row3:item_name"
+    },
+    {
+      "rect": {
+        "x1": 436,
+        "y1": 815,
+        "x2": 465,
+        "y2": 834
+      },
+      "value": "2",
+      "label": "items_row3:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 501,
+        "y1": 809,
+        "x2": 575,
+        "y2": 828
+      },
+      "value": "34.000",
+      "label": "items_row3:item_price"
+    },
+    {
+      "rect": {
+        "x1": 176,
+        "y1": 846,
+        "x2": 368,
+        "y2": 868
+      },
+      "value": "NYONYA NASI LEMAK",
+      "label": "items_row4:item_name"
+    },
+    {
+      "rect": {
+        "x1": 437,
+        "y1": 837,
+        "x2": 466,
+        "y2": 858
+      },
+      "value": "1",
+      "label": "items_row4:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 500,
+        "y1": 834,
+        "x2": 580,
+        "y2": 855
+      },
+      "value": "79.000",
+      "label": "items_row4:item_price"
+    },
+    {
+      "rect": {
+        "x1": 173,
+        "y1": 866,
+        "x2": 362,
+        "y2": 893
+      },
+      "value": "PENANG MEE SHUA",
+      "label": "items_row5:item_name"
+    },
+    {
+      "rect": {
+        "x1": 435,
+        "y1": 862,
+        "x2": 467,
+        "y2": 884
+      },
+      "value": "1",
+      "label": "items_row5:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 502,
+        "y1": 858,
+        "x2": 579,
+        "y2": 884
+      },
+      "value": "72.000",
+      "label": "items_row5:item_price"
+    },
+    {
+      "rect": {
+        "x1": 172,
+        "y1": 895,
+        "x2": 267,
+        "y2": 919
+      },
+      "value": "ICE TEA",
+      "label": "items_row6:item_name"
+    },
+    {
+      "rect": {
+        "x1": 435,
+        "y1": 886,
+        "x2": 474,
+        "y2": 910
+      },
+      "value": "1",
+      "label": "items_row6:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 505,
+        "y1": 884,
+        "x2": 583,
+        "y2": 906
+      },
+      "value": "19.000",
+      "label": "items_row6:item_price"
+    },
+    {
+      "rect": {
+        "x1": 172,
+        "y1": 917,
+        "x2": 361,
+        "y2": 942
+      },
+      "value": "AQUA REFLECTIONS",
+      "label": "items_row7:item_name"
+    },
+    {
+      "rect": {
+        "x1": 435,
+        "y1": 910,
+        "x2": 477,
+        "y2": 937
+      },
+      "value": "1",
+      "label": "items_row7:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 504,
+        "y1": 910,
+        "x2": 587,
+        "y2": 926
+      },
+      "value": "35.000",
+      "label": "items_row7:item_price"
+    },
+    {
+      "rect": {
+        "x1": 175,
+        "y1": 943,
+        "x2": 290,
+        "y2": 963
+      },
+      "value": "TEH TARIK",
+      "label": "items_row8:item_name"
+    },
+    {
+      "rect": {
+        "x1": 439,
+        "y1": 940,
+        "x2": 473,
+        "y2": 960
+      },
+      "value": "1",
+      "label": "items_row8:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 505,
+        "y1": 928,
+        "x2": 581,
+        "y2": 952
+      },
+      "value": "35.000",
+      "label": "items_row8:item_price"
+    },
+    {
+      "rect": {
+        "x1": 175,
+        "y1": 967,
+        "x2": 269,
+        "y2": 984
+      },
+      "value": "HOT TEA",
+      "label": "items_row9:item_name"
+    },
+    {
+      "rect": {
+        "x1": 438,
+        "y1": 963,
+        "x2": 471,
+        "y2": 984
+      },
+      "value": "1",
+      "label": "items_row9:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 508,
+        "y1": 956,
+        "x2": 588,
+        "y2": 975
+      },
+      "value": "19.000",
+      "label": "items_row9:item_name"
+    },
+    {
+      "rect": {
+        "x1": 173,
+        "y1": 985,
+        "x2": 317,
+        "y2": 1007
+      },
+      "value": "FRIED MANTOU",
+      "label": "items_row10:item_name"
+    },
+    {
+      "rect": {
+        "x1": 440,
+        "y1": 987,
+        "x2": 471,
+        "y2": 1010
+      },
+      "value": "1",
+      "label": "items_row10:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 514,
+        "y1": 976,
+        "x2": 582,
+        "y2": 1004
+      },
+      "value": "31.000",
+      "label": "items_row10:item_price"
+    },
+    {
+      "rect": {
+        "x1": 165,
+        "y1": 1007,
+        "x2": 379,
+        "y2": 1040
+      },
+      "value": "MAYONNAISE SHRIMP",
+      "label": "items_row11:item_name"
+    },
+    {
+      "rect": {
+        "x1": 439,
+        "y1": 1013,
+        "x2": 470,
+        "y2": 1034
+      },
+      "value": "1",
+      "label": "items_row11:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 509,
+        "y1": 1007,
+        "x2": 593,
+        "y2": 1028
+      },
+      "value": "96.000",
+      "label": "items_row11:item_name"
+    },
+    {
+      "rect": {
+        "x1": 495,
+        "y1": 1037,
+        "x2": 595,
+        "y2": 1065
+      },
+      "value": "590.000",
+      "label": "subtotal"
+    },
+    {
+      "rect": {
+        "x1": 156,
+        "y1": 1072,
+        "x2": 310,
+        "y2": 1105
+      },
+      "value": "Service Charge",
+      "label": ""
+    },
+    {
+      "rect": {
+        "x1": 506,
+        "y1": 1073,
+        "x2": 593,
+        "y2": 1098
+      },
+      "value": "41.300",
+      "label": "service"
+    },
+    {
+      "rect": {
+        "x1": 158,
+        "y1": 1106,
+        "x2": 210,
+        "y2": 1126
+      },
+      "value": "PB1",
+      "label": ""
+    },
+    {
+      "rect": {
+        "x1": 508,
+        "y1": 1100,
+        "x2": 587,
+        "y2": 1125
+      },
+      "value": "63.130",
+      "label": "tax"
+    },
+    {
+      "rect": {
+        "x1": 158,
+        "y1": 1126,
+        "x2": 213,
+        "y2": 1154
+      },
+      "value": "Total",
+      "label": ""
+    },
+    {
+      "rect": {
+        "x1": 500,
+        "y1": 1128,
+        "x2": 588,
+        "y2": 1157
+      },
+      "value": "694.430",
+      "label": "total"
+    }
+  ]
+}

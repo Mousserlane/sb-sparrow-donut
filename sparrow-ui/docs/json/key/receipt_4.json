@@ -1,0 +1,24 @@
+{
+  "header": {
+    "restaurant_name": "FORE COFFEE",
+    "date": "Minggu, 3 Desember 2023, 13:41"
+  },
+  "items": [
+    {
+      "item_name": "Iced Manuka Americano",
+      "item_qty": "1",
+      "item_subtotal": "29.000",
+      "item_price": "29.000",
+      "subitems": [
+        {
+          "item_name": "Iced / Regular",
+          "item_qty": "1",
+          "item_subtotal": "0",
+          "item_price": "0"
+        }
+      ]
+    }
+  ],
+  "total": "29.000",
+  "tax": "2.636"
+}

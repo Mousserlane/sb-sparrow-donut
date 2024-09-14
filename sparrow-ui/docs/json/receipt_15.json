@@ -1,0 +1,413 @@
+{
+  "meta": {
+    "version": "v1.0",
+    "split": "train",
+    "image_id": 15,
+    "image_size": {
+      "width": 720,
+      "height": 1600
+    }
+  },
+  "words": [
+    {
+      "rect": {
+        "x1": 274,
+        "y1": 204,
+        "x2": 381,
+        "y2": 240
+      },
+      "value": "Susu Susi",
+      "label": "header:restaurant_name"
+    },
+    {
+      "rect": {
+        "x1": 178,
+        "y1": 439,
+        "x2": 481,
+        "y2": 474
+      },
+      "value": "16 Apr 2024 14:41",
+      "label": "header:date"
+    },
+    {
+      "rect": {
+        "x1": 169,
+        "y1": 549,
+        "x2": 305,
+        "y2": 585
+      },
+      "value": "Indomie Biasa",
+      "label": "items_row1:item_name"
+    },
+    {
+      "rect": {
+        "x1": 171,
+        "y1": 583,
+        "x2": 199,
+        "y2": 605
+      },
+      "value": "1",
+      "label": "items_row1:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 219,
+        "y1": 586,
+        "x2": 288,
+        "y2": 604
+      },
+      "value": "11.000",
+      "label": "items_row1:item_subtotal"
+    },
+    {
+      "rect": {
+        "x1": 411,
+        "y1": 585,
+        "x2": 483,
+        "y2": 607
+      },
+      "value": "11.000",
+      "label": "items_row1:item_price"
+    },
+    {
+      "rect": {
+        "x1": 216,
+        "y1": 607,
+        "x2": 289,
+        "y2": 630
+      },
+      "value": "+GORENG",
+      "label": "items_row1:subitem_row1:item_name"
+    },
+    {
+      "rect": {
+        "x1": 213,
+        "y1": 629,
+        "x2": 247,
+        "y2": 652
+      },
+      "value": "0",
+      "label": "items_row1:subitem_row1:item_subtotal"
+    },
+    {
+      "rect": {
+        "x1": 447,
+        "y1": 623,
+        "x2": 484,
+        "y2": 660
+      },
+      "value": "0",
+      "label": "items_row1:subitem_row1:item_price"
+    },
+    {
+      "rect": {
+        "x1": 166,
+        "y1": 662,
+        "x2": 365,
+        "y2": 712
+      },
+      "value": "Indomie Bangladesh JKT",
+      "label": "items_row2:item_name"
+    },
+    {
+      "rect": {
+        "x1": 166,
+        "y1": 713,
+        "x2": 197,
+        "y2": 735
+      },
+      "value": "1",
+      "label": "items_row2:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 213,
+        "y1": 713,
+        "x2": 289,
+        "y2": 738
+      },
+      "value": "20.000",
+      "label": "items_row2:item_subtotal"
+    },
+    {
+      "rect": {
+        "x1": 399,
+        "y1": 711,
+        "x2": 480,
+        "y2": 740
+      },
+      "value": "20.000",
+      "label": "items_row2:item_price"
+    },
+    {
+      "rect": {
+        "x1": 161,
+        "y1": 744,
+        "x2": 336,
+        "y2": 773
+      },
+      "value": "Susu Melon DINGIN",
+      "label": "items_row3:item_name"
+    },
+    {
+      "rect": {
+        "x1": 163,
+        "y1": 770,
+        "x2": 197,
+        "y2": 794
+      },
+      "value": "2",
+      "label": "items_row3:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 208,
+        "y1": 771,
+        "x2": 288,
+        "y2": 793
+      },
+      "value": "15.000",
+      "label": "items_row3:item_subtotal"
+    },
+    {
+      "rect": {
+        "x1": 398,
+        "y1": 769,
+        "x2": 475,
+        "y2": 803
+      },
+      "value": "30.000",
+      "label": "items_row3:item_price"
+    },
+    {
+      "rect": {
+        "x1": 212,
+        "y1": 796,
+        "x2": 248,
+        "y2": 816
+      },
+      "value": "+ES",
+      "label": "items_row3:subitem_row1:item_name"
+    },
+    {
+      "rect": {
+        "x1": 209,
+        "y1": 816,
+        "x2": 240,
+        "y2": 847
+      },
+      "value": "0",
+      "label": "items_row3:subitem_row1:item_subtotal"
+    },
+    {
+      "rect": {
+        "x1": 449,
+        "y1": 816,
+        "x2": 476,
+        "y2": 851
+      },
+      "value": "0",
+      "label": "items_row3:subitem_row1:item_price"
+    },
+    {
+      "rect": {
+        "x1": 157,
+        "y1": 847,
+        "x2": 268,
+        "y2": 882
+      },
+      "value": "Nasi Goreng",
+      "label": "items_row4:item_name"
+    },
+    {
+      "rect": {
+        "x1": 159,
+        "y1": 878,
+        "x2": 189,
+        "y2": 905
+      },
+      "value": "2",
+      "label": "items_row4:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 203,
+        "y1": 878,
+        "x2": 275,
+        "y2": 904
+      },
+      "value": "6.000",
+      "label": "items_row4:item_subtotal"
+    },
+    {
+      "rect": {
+        "x1": 402,
+        "y1": 880,
+        "x2": 475,
+        "y2": 910
+      },
+      "value": "12.000",
+      "label": "items_row4:item_price"
+    },
+    {
+      "rect": {
+        "x1": 157,
+        "y1": 911,
+        "x2": 258,
+        "y2": 938
+      },
+      "value": "tahu bakso",
+      "label": "items_row5:item_name"
+    },
+    {
+      "rect": {
+        "x1": 157,
+        "y1": 936,
+        "x2": 186,
+        "y2": 963
+      },
+      "value": "1",
+      "label": "items_row5:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 205,
+        "y1": 941,
+        "x2": 268,
+        "y2": 963
+      },
+      "value": "2.500",
+      "label": "items_row5:item_subtotal"
+    },
+    {
+      "rect": {
+        "x1": 411,
+        "y1": 941,
+        "x2": 471,
+        "y2": 972
+      },
+      "value": "2.500",
+      "label": "items_row5:item_price"
+    },
+    {
+      "rect": {
+        "x1": 152,
+        "y1": 969,
+        "x2": 305,
+        "y2": 1005
+      },
+      "value": "Sosis merah Jkt",
+      "label": "items_row6:item_name"
+    },
+    {
+      "rect": {
+        "x1": 154,
+        "y1": 999,
+        "x2": 182,
+        "y2": 1028
+      },
+      "value": "1",
+      "label": "items_row6:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 198,
+        "y1": 1006,
+        "x2": 271,
+        "y2": 1027
+      },
+      "value": "4.500",
+      "label": "items_row6:item_subtotal"
+    },
+    {
+      "rect": {
+        "x1": 411,
+        "y1": 1006,
+        "x2": 471,
+        "y2": 1034
+      },
+      "value": "4.500",
+      "label": "items_row6:item_price"
+    },
+    {
+      "rect": {
+        "x1": 149,
+        "y1": 1032,
+        "x2": 268,
+        "y2": 1068
+      },
+      "value": "SOSIS BAKAR",
+      "label": "items_row7:item_name"
+    },
+    {
+      "rect": {
+        "x1": 153,
+        "y1": 1063,
+        "x2": 179,
+        "y2": 1088
+      },
+      "value": "1",
+      "label": "items_row7:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 198,
+        "y1": 1063,
+        "x2": 269,
+        "y2": 1088
+      },
+      "value": "6.500",
+      "label": "items_row7:item_subtotal"
+    },
+    {
+      "rect": {
+        "x1": 412,
+        "y1": 1067,
+        "x2": 472,
+        "y2": 1101
+      },
+      "value": "6.500",
+      "label": "items_row7:item_price"
+    },
+    {
+      "rect": {
+        "x1": 148,
+        "y1": 1106,
+        "x2": 236,
+        "y2": 1139
+      },
+      "value": "Subtotal",
+      "label": ""
+    },
+    {
+      "rect": {
+        "x1": 400,
+        "y1": 1115,
+        "x2": 470,
+        "y2": 1145
+      },
+      "value": "86.500",
+      "label": "subtotal"
+    },
+    {
+      "rect": {
+        "x1": 146,
+        "y1": 1155,
+        "x2": 208,
+        "y2": 1185
+      },
+      "value": "Total",
+      "label": ""
+    },
+    {
+      "rect": {
+        "x1": 397,
+        "y1": 1163,
+        "x2": 468,
+        "y2": 1198
+      },
+      "value": "86.500",
+      "label": "total"
+    }
+  ]
+}

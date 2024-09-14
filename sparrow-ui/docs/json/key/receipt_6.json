@@ -1,0 +1,18 @@
+{
+  "header": {
+    "restaurant_name": "Uji Matcha",
+    "date": "06 Dec 2023 12:47"
+  },
+  "items": [
+    {
+      "item_name": "Ice Cream Matcha Latte",
+      "item_qty": "1",
+      "item_price": "53.000"
+    }
+  ],
+  "": {
+    "subtotal": "53.000"
+  },
+  "tax": "5.300",
+  "total": "58.300"
+}

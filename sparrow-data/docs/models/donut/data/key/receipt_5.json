@@ -1,0 +1,15 @@
+{
+  "header": {
+    "restaurant_name": "INFORMA CASABLANCA",
+    "date": "01 Dec 2023 20:36"
+  },
+  "items": [
+    {
+      "item_name": "OCTA SHELF 4 TIER L50 OAK",
+      "item_qty": "1",
+      "item_subtotal": "749.000",
+      "item_price": "749.000"
+    }
+  ],
+  "total": "749.000"
+}
