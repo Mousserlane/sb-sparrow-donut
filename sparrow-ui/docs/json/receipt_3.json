@@ -1,0 +1,313 @@
+{
+  "meta": {
+    "version": "v1.0",
+    "split": "train",
+    "image_id": 4,
+    "image_size": {
+      "width": 720,
+      "height": 1600
+    }
+  },
+  "words": [
+    {
+      "rect": {
+        "x1": 256,
+        "y1": 352,
+        "x2": 466,
+        "y2": 370
+      },
+      "value": "Little Contrast Gandaria",
+      "label": "header:restaurant_name"
+    },
+    {
+      "rect": {
+        "x1": 205,
+        "y1": 496,
+        "x2": 477,
+        "y2": 525
+      },
+      "value": "17 Dec 2023 09:51",
+      "label": "header:date"
+    },
+    {
+      "rect": {
+        "x1": 201,
+        "y1": 618,
+        "x2": 366,
+        "y2": 669
+      },
+      "value": "BOTS (Burger Of The Sea)",
+      "label": "items_row1:item_name"
+    },
+    {
+      "rect": {
+        "x1": 201,
+        "y1": 673,
+        "x2": 229,
+        "y2": 687
+      },
+      "value": "1",
+      "label": "items_row1:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 248,
+        "y1": 670,
+        "x2": 312,
+        "y2": 687
+      },
+      "value": "50.000",
+      "label": "items_row1:item_subtotal"
+    },
+    {
+      "rect": {
+        "x1": 412,
+        "y1": 657,
+        "x2": 484,
+        "y2": 688
+      },
+      "value": "50.000",
+      "label": "items_row1:item_price"
+    },
+    {
+      "rect": {
+        "x1": 196,
+        "y1": 699,
+        "x2": 383,
+        "y2": 746
+      },
+      "value": "American Cheeseburger Animal Fries",
+      "label": "items_row2:item_name"
+    },
+    {
+      "rect": {
+        "x1": 198,
+        "y1": 746,
+        "x2": 221,
+        "y2": 766
+      },
+      "value": "1",
+      "label": "items_row2:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 243,
+        "y1": 749,
+        "x2": 326,
+        "y2": 768
+      },
+      "value": "42.000",
+      "label": "items_row2:item_subtotal"
+    },
+    {
+      "rect": {
+        "x1": 414,
+        "y1": 737,
+        "x2": 487,
+        "y2": 767
+      },
+      "value": "42.000",
+      "label": "items_row2:item_price"
+    },
+    {
+      "rect": {
+        "x1": 199,
+        "y1": 772,
+        "x2": 389,
+        "y2": 814
+      },
+      "value": "Es Kopi Susu Cinnamon",
+      "label": "items_row3:item_name"
+    },
+    {
+      "rect": {
+        "x1": 197,
+        "y1": 815,
+        "x2": 233,
+        "y2": 840
+      },
+      "value": "1",
+      "label": "items_row3:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 241,
+        "y1": 815,
+        "x2": 323,
+        "y2": 841
+      },
+      "value": "35.000",
+      "label": "items_row3:item_subtotal"
+    },
+    {
+      "rect": {
+        "x1": 422,
+        "y1": 809,
+        "x2": 491,
+        "y2": 835
+      },
+      "value": "35.000",
+      "label": "items_row3:item_price"
+    },
+    {
+      "rect": {
+        "x1": 194,
+        "y1": 839,
+        "x2": 360,
+        "y2": 871
+      },
+      "value": "Earlgrey Milk Tea",
+      "label": "items_row4:item_name"
+    },
+    {
+      "rect": {
+        "x1": 200,
+        "y1": 870,
+        "x2": 235,
+        "y2": 893
+      },
+      "value": "1",
+      "label": "items_row4:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 245,
+        "y1": 871,
+        "x2": 322,
+        "y2": 886
+      },
+      "value": "35.000",
+      "label": "items_row4:item_subtotal"
+    },
+    {
+      "rect": {
+        "x1": 420,
+        "y1": 861,
+        "x2": 492,
+        "y2": 889
+      },
+      "value": "35.000",
+      "label": "items_row4:item_price"
+    },
+    {
+      "rect": {
+        "x1": 196,
+        "y1": 896,
+        "x2": 380,
+        "y2": 938
+      },
+      "value": "Es Kopi Susu Little Contrast",
+      "label": "items_row5:item_name"
+    },
+    {
+      "rect": {
+        "x1": 201,
+        "y1": 940,
+        "x2": 231,
+        "y2": 963
+      },
+      "value": "1",
+      "label": "items_row5:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 244,
+        "y1": 940,
+        "x2": 325,
+        "y2": 958
+      },
+      "value": "35.000",
+      "label": "items_row5:item_subtotal"
+    },
+    {
+      "rect": {
+        "x1": 426,
+        "y1": 931,
+        "x2": 492,
+        "y2": 957
+      },
+      "value": "35.000",
+      "label": "items_row5:item_price"
+    },
+    {
+      "rect": {
+        "x1": 201,
+        "y1": 965,
+        "x2": 344,
+        "y2": 992
+      },
+      "value": "Ice Honey Latte",
+      "label": "items_row6:item_name"
+    },
+    {
+      "rect": {
+        "x1": 198,
+        "y1": 993,
+        "x2": 236,
+        "y2": 1014
+      },
+      "value": "1",
+      "label": "items_row6:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 248,
+        "y1": 992,
+        "x2": 318,
+        "y2": 1014
+      },
+      "value": "35.000",
+      "label": "items_row6:item_subtotal"
+    },
+    {
+      "rect": {
+        "x1": 420,
+        "y1": 985,
+        "x2": 493,
+        "y2": 1015
+      },
+      "value": "35.000",
+      "label": "items_row6:item_price"
+    },
+    {
+      "rect": {
+        "x1": 198,
+        "y1": 1027,
+        "x2": 284,
+        "y2": 1058
+      },
+      "value": "Subtotal",
+      "label": ""
+    },
+    {
+      "rect": {
+        "x1": 421,
+        "y1": 1029,
+        "x2": 494,
+        "y2": 1053
+      },
+      "value": "232.000",
+      "label": "subtotal"
+    },
+    {
+      "rect": {
+        "x1": 197,
+        "y1": 1068,
+        "x2": 258,
+        "y2": 1097
+      },
+      "value": "Total",
+      "label": ""
+    },
+    {
+      "rect": {
+        "x1": 418,
+        "y1": 1071,
+        "x2": 496,
+        "y2": 1091
+      },
+      "value": "232.000",
+      "label": "total"
+    }
+  ]
+}

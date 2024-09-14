@@ -1,0 +1,46 @@
+{
+  "header": {
+    "restaurant_name": "Little Contrast Gandaria",
+    "date": "17 Dec 2023 09:51"
+  },
+  "items": [
+    {
+      "item_name": "BOTS (Burger Of The Sea)",
+      "item_qty": "1",
+      "item_subtotal": "50.000",
+      "item_price": "50.000"
+    },
+    {
+      "item_name": "American Cheeseburger Animal Fries",
+      "item_qty": "1",
+      "item_subtotal": "42.000",
+      "item_price": "42.000"
+    },
+    {
+      "item_name": "Es Kopi Susu Cinnamon",
+      "item_qty": "1",
+      "item_subtotal": "35.000",
+      "item_price": "35.000"
+    },
+    {
+      "item_name": "Earlgrey Milk Tea",
+      "item_qty": "1",
+      "item_subtotal": "35.000",
+      "item_price": "35.000"
+    },
+    {
+      "item_name": "Es Kopi Susu Little Contrast",
+      "item_qty": "1",
+      "item_subtotal": "35.000",
+      "item_price": "35.000"
+    },
+    {
+      "item_name": "Ice Honey Latte",
+      "item_qty": "1",
+      "item_subtotal": "35.000",
+      "item_price": "35.000"
+    }
+  ],
+  "subtotal": "232.000",
+  "total": "232.000"
+}

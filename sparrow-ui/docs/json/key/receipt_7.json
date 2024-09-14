@@ -1,0 +1,35 @@
+{
+  "header": {
+    "restaurant_name": "ACE Grand Indonesia",
+    "date": "03 Dec 2023 12:22"
+  },
+  "items": [
+    {
+      "item_name": "FLAT HEX KEY M 1.5-10MM 9P",
+      "item_qty": "1",
+      "item_subtotal": "199.900",
+      "item_price": "199.900"
+    },
+    {
+      "item_name": "CABLE CLIP 10MM WHITE (50)",
+      "item_qty": "1",
+      "item_subtotal": "34.900",
+      "item_price": "34.900"
+    },
+    {
+      "item_name": "WOODSCREW RND HEAD KRISBOW 6X2",
+      "item_qty": "1",
+      "item_subtotal": "16.900",
+      "item_price": "16.900"
+    },
+    {
+      "item_name": "CONCRETE NAIL KRISBOW BLK2. 0X3",
+      "item_qty": "1",
+      "item_subtotal": "16.900",
+      "item_price": "16.900"
+    }
+  ],
+  "None": {
+    "total": "188.600"
+  }
+}

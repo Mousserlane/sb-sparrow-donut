@@ -1,0 +1,66 @@
+{
+  "header": {
+    "restaurant_name": "Susu Susi",
+    "date": "16 Apr 2024 14:41"
+  },
+  "items": [
+    {
+      "item_name": "Indomie Biasa",
+      "item_qty": "1",
+      "item_subtotal": "11.000",
+      "item_price": "11.000",
+      "subitems": [
+        {
+          "item_name": "+ES",
+          "item_subtotal": "0",
+          "item_price": "0"
+        }
+      ]
+    },
+    {
+      "item_name": "Indomie Bangladesh JKT",
+      "item_qty": "1",
+      "item_subtotal": "20.000",
+      "item_price": "20.000"
+    },
+    {
+      "item_name": "Susu Melon DINGIN",
+      "item_qty": "2",
+      "item_subtotal": "15.000",
+      "item_price": "30.000",
+      "subitems": [
+        {
+          "item_name": "+ES",
+          "item_subtotal": "0",
+          "item_price": "0"
+        }
+      ]
+    },
+    {
+      "item_name": "Nasi Goreng",
+      "item_qty": "2",
+      "item_subtotal": "6.000",
+      "item_price": "12.000"
+    },
+    {
+      "item_name": "tahu bakso",
+      "item_qty": "1",
+      "item_subtotal": "2.500",
+      "item_price": "2.500"
+    },
+    {
+      "item_name": "Sosis merah Jkt",
+      "item_qty": "1",
+      "item_subtotal": "4.500",
+      "item_price": "4.500"
+    },
+    {
+      "item_name": "SOSIS BAKAR",
+      "item_qty": "1",
+      "item_subtotal": "6.500",
+      "item_price": "6.500"
+    }
+  ],
+  "subtotal": "86.500",
+  "total": "86.500"
+}

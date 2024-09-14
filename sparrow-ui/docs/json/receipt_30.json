@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "version": "v1.0",
+    "split": "train",
+    "image_id": 30,
+    "image_size": {
+      "width": 720,
+      "height": 1600
+    }
+  },
+  "words": [
+    {
+      "rect": {
+        "x1": 187,
+        "y1": 479,
+        "x2": 502,
+        "y2": 511
+      },
+      "value": "RESTORAN SEDERHANA",
+      "label": "restaurant_name"
+    },
+    {
+      "rect": {
+        "x1": 228,
+        "y1": 618,
+        "x2": 502,
+        "y2": 654
+      },
+      "value": "26-12-2023 12:37",
+      "label": "date"
+    },
+    {
+      "rect": {
+        "x1": 159,
+        "y1": 694,
+        "x2": 194,
+        "y2": 729
+      },
+      "value": "1",
+      "label": "items_row1:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 200,
+        "y1": 694,
+        "x2": 405,
+        "y2": 725
+      },
+      "value": "SATE KETUPAT",
+      "label": "items_row1:item_name"
+    },
+    {
+      "rect": {
+        "x1": 446,
+        "y1": 689,
+        "x2": 550,
+        "y2": 728
+      },
+      "value": "28.000",
+      "label": "items_row1:item_price"
+    },
+    {
+      "rect": {
+        "x1": 159,
+        "y1": 728,
+        "x2": 190,
+        "y2": 757
+      },
+      "value": "2",
+      "label": "items_row2:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 198,
+        "y1": 726,
+        "x2": 395,
+        "y2": 757
+      },
+      "value": "NASI GORENG",
+      "label": "items_row2:item_name"
+    },
+    {
+      "rect": {
+        "x1": 455,
+        "y1": 728,
+        "x2": 552,
+        "y2": 753
+      },
+      "value": "60.000",
+      "label": "items_row2:item_price"
+    },
+    {
+      "rect": {
+        "x1": 195,
+        "y1": 759,
+        "x2": 359,
+        "y2": 788
+      },
+      "value": "SUBTOTAL",
+      "label": ""
+    },
+    {
+      "rect": {
+        "x1": 457,
+        "y1": 753,
+        "x2": 561,
+        "y2": 783
+      },
+      "value": "88.000",
+      "label": "subtotal"
+    },
+    {
+      "rect": {
+        "x1": 206,
+        "y1": 789,
+        "x2": 327,
+        "y2": 816
+      },
+      "value": "TAX 10%",
+      "label": ""
+    },
+    {
+      "rect": {
+        "x1": 474,
+        "y1": 787,
+        "x2": 568,
+        "y2": 809
+      },
+      "value": "8.800",
+      "label": "tax"
+    },
+    {
+      "rect": {
+        "x1": 208,
+        "y1": 815,
+        "x2": 256,
+        "y2": 841
+      },
+      "value": "TL",
+      "label": ""
+    },
+    {
+      "rect": {
+        "x1": 357,
+        "y1": 807,
+        "x2": 562,
+        "y2": 843
+      },
+      "value": "96.800",
+      "label": "total"
+    }
+  ]
+}

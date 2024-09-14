@@ -1,0 +1,26 @@
+{
+  "header": {
+    "date": "04.12.23-12:18"
+  },
+  "items": [
+    {
+      "item_name": "INDOMI GORENG SPC 80",
+      "item_qty": "2",
+      "item_subtotal": "4000",
+      "item_price": "8.000"
+    },
+    {
+      "item_name": "INDOMI SOTO MIE 70GR",
+      "item_qty": "2",
+      "item_subtotal": "3000",
+      "item_price": "6.000"
+    },
+    {
+      "item_name": "INDOMI JMB AYM PG127",
+      "item_qty": "1",
+      "item_subtotal": "5000",
+      "item_price": "5.000"
+    }
+  ],
+  "total": "19.000"
+}

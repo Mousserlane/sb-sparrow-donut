@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "version": "v0.1",
+    "split": "train",
+    "image_id": 14,
+    "image_size": {
+      "width": 720,
+      "height": 1600
+    }
+  },
+  "words": [
+    {
+      "rect": {
+        "x1": 112,
+        "y1": 592,
+        "x2": 143,
+        "y2": 631
+      },
+      "value": "1",
+      "label": "item_qty"
+    },
+    {
+      "rect": {
+        "x1": 146,
+        "y1": 595,
+        "x2": 362,
+        "y2": 642
+      },
+      "value": "Truffle Gyudon With Sambal Matah",
+      "label": "item_name"
+    },
+    {
+      "rect": {
+        "x1": 477,
+        "y1": 604,
+        "x2": 554,
+        "y2": 633
+      },
+      "value": "75000",
+      "label": "item_qty"
+    }
+  ]
+}

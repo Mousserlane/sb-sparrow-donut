@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "version": "v1.0",
+    "split": "train",
+    "image_id": 16,
+    "image_size": {
+      "width": 720,
+      "height": 1600
+    }
+  },
+  "words": [
+    {
+      "rect": {
+        "x1": 327,
+        "y1": 401,
+        "x2": 443,
+        "y2": 446
+      },
+      "value": "Djournal",
+      "label": "header:restaurant_name"
+    },
+    {
+      "rect": {
+        "x1": 280,
+        "y1": 504,
+        "x2": 509,
+        "y2": 533
+      },
+      "value": "22-04-2024 13:59",
+      "label": "header:date"
+    },
+    {
+      "rect": {
+        "x1": 108,
+        "y1": 694,
+        "x2": 141,
+        "y2": 734
+      },
+      "value": "1",
+      "label": "items_row1:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 180,
+        "y1": 701,
+        "x2": 456,
+        "y2": 734
+      },
+      "value": "Salted Caramel Latte",
+      "label": "items_row1:item_name"
+    },
+    {
+      "rect": {
+        "x1": 549,
+        "y1": 696,
+        "x2": 643,
+        "y2": 731
+      },
+      "value": "49.000",
+      "label": "items_row1:item_price"
+    },
+    {
+      "rect": {
+        "x1": 176,
+        "y1": 735,
+        "x2": 209,
+        "y2": 763
+      },
+      "value": "1",
+      "label": "items_row1:subitem_row1:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 231,
+        "y1": 734,
+        "x2": 455,
+        "y2": 799
+      },
+      "value": "Large Milk Iced Salted Crml - 78",
+      "label": "items_row1:subitem_row1:item_name"
+    },
+    {
+      "rect": {
+        "x1": 559,
+        "y1": 738,
+        "x2": 650,
+        "y2": 771
+      },
+      "value": "7.000",
+      "label": "items_row1:subitem_row1:item_price"
+    },
+    {
+      "rect": {
+        "x1": 175,
+        "y1": 801,
+        "x2": 212,
+        "y2": 828
+      },
+      "value": "1",
+      "label": "items_row1:subitem_row2:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 229,
+        "y1": 802,
+        "x2": 484,
+        "y2": 867
+      },
+      "value": "No Whipped Cream - 78",
+      "label": "items_row1:subitem_row2:item_name"
+    },
+    {
+      "rect": {
+        "x1": 609,
+        "y1": 803,
+        "x2": 642,
+        "y2": 840
+      },
+      "value": "0",
+      "label": "items_row1:subitem_row2:item_price"
+    },
+    {
+      "rect": {
+        "x1": 275,
+        "y1": 924,
+        "x2": 439,
+        "y2": 986
+      },
+      "value": "Grand Total",
+      "label": ""
+    },
+    {
+      "rect": {
+        "x1": 539,
+        "y1": 910,
+        "x2": 640,
+        "y2": 983
+      },
+      "value": "56.000",
+      "label": "total"
+    },
+    {
+      "rect": {
+        "x1": 551,
+        "y1": 1008,
+        "x2": 629,
+        "y2": 1045
+      },
+      "value": "5.091",
+      "label": "tax"
+    }
+  ]
+}

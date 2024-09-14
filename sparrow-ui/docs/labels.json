@@ -1,6 +1,11 @@
 {
   "labels": [
     {
+      "id": 21,
+      "name": "item_subtotal",
+      "description": ""
+    },
+    {
       "id": 20,
       "name": "service",
       "description": ""

@@ -1,0 +1,35 @@
+{
+  "header": {
+    "restaurant_name": "Dapur Cianjur",
+    "date": "05 Des 2023"
+  },
+  "items": [
+    {
+      "item_name": "DADA GORENG",
+      "item_qty": "1",
+      "item_subtotal": "24.000",
+      "item_price": "24.000"
+    },
+    {
+      "item_name": "TAHU GORENG",
+      "item_qty": "1",
+      "item_subtotal": "4.000",
+      "item_price": "4.000"
+    },
+    {
+      "item_name": "TEMPE GORENG",
+      "item_qty": "1",
+      "item_subtotal": "4.000",
+      "item_price": "4.000"
+    },
+    {
+      "item_name": "SAMBEL",
+      "item_qty": "1",
+      "item_subtotal": "3.000",
+      "item_price": "3.000"
+    }
+  ],
+  "subtotal": "35.000",
+  "tax": "3.500",
+  "total": "38.500"
+}

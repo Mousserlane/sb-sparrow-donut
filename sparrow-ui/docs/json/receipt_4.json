@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "version": "v1.0",
+    "split": "train",
+    "image_id": 5,
+    "image_size": {
+      "width": 720,
+      "height": 1600
+    }
+  },
+  "words": [
+    {
+      "rect": {
+        "x1": 223,
+        "y1": 162,
+        "x2": 504,
+        "y2": 202
+      },
+      "value": "FORE COFFEE",
+      "label": "header:restaurant_name"
+    },
+    {
+      "rect": {
+        "x1": 116,
+        "y1": 449,
+        "x2": 445,
+        "y2": 473
+      },
+      "value": "Minggu, 3 Desember 2023, 13:41",
+      "label": "header:date"
+    },
+    {
+      "rect": {
+        "x1": 107,
+        "y1": 588,
+        "x2": 350,
+        "y2": 624
+      },
+      "value": "Iced Manuka Americano",
+      "label": "items_row1:item_name"
+    },
+    {
+      "rect": {
+        "x1": 116,
+        "y1": 622,
+        "x2": 146,
+        "y2": 654
+      },
+      "value": "1",
+      "label": "items_row1:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 336,
+        "y1": 616,
+        "x2": 474,
+        "y2": 646
+      },
+      "value": "29.000",
+      "label": "items_row1:item_subtotal"
+    },
+    {
+      "rect": {
+        "x1": 549,
+        "y1": 619,
+        "x2": 633,
+        "y2": 651
+      },
+      "value": "29.000",
+      "label": "items_row1:item_price"
+    },
+    {
+      "rect": {
+        "x1": 149,
+        "y1": 644,
+        "x2": 311,
+        "y2": 676
+      },
+      "value": "Iced / Regular",
+      "label": "items_row1:subitem_row1:item_name"
+    },
+    {
+      "rect": {
+        "x1": 137,
+        "y1": 679,
+        "x2": 167,
+        "y2": 706
+      },
+      "value": "1",
+      "label": "items_row1:subitem_row1:item_qty"
+    },
+    {
+      "rect": {
+        "x1": 390,
+        "y1": 666,
+        "x2": 469,
+        "y2": 699
+      },
+      "value": "0",
+      "label": "items_row1:subitem_row1:item_subtotal"
+    },
+    {
+      "rect": {
+        "x1": 600,
+        "y1": 673,
+        "x2": 630,
+        "y2": 698
+      },
+      "value": "0",
+      "label": "items_row1:subitem_row1:item_price"
+    },
+    {
+      "rect": {
+        "x1": 103,
+        "y1": 747,
+        "x2": 274,
+        "y2": 780
+      },
+      "value": "Total Inc Tax",
+      "label": ""
+    },
+    {
+      "rect": {
+        "x1": 489,
+        "y1": 800,
+        "x2": 637,
+        "y2": 830
+      },
+      "value": "29.000",
+      "label": "total"
+    },
+    {
+      "rect": {
+        "x1": 534,
+        "y1": 903,
+        "x2": 642,
+        "y2": 932
+      },
+      "value": "2.636",
+      "label": "tax"
+    }
+  ]
+}
