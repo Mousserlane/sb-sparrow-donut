@@ -1,12 +1,13 @@
 from pydantic import BaseSettings
+import os
 
 
 class Settings(BaseSettings):
-    huggingface_key: str = ""
+    huggingface_key: str = os.environ.get("HF_TOKEN")
     sparrow_key: str = ""
-    processor: str = "katanaml-org/invoices-donut-model-v1"
-    model: str = "katanaml-org/invoices-donut-model-v1"
-    dataset: str = "katanaml-org/invoices-donut-data-v1"
+    processor: str = "mousserlane/sb-donut-receipt-parser-v1"
+    model: str = "mousserlane/sb-donut-receipt-parser-v1"
+    dataset: str = "mousserlane/sb-donut-receipt-parser-v1"
     base_config: str = "naver-clova-ix/donut-base"
     base_processor: str = "naver-clova-ix/donut-base"
     base_model: str = "naver-clova-ix/donut-base"
