@@ -4,6 +4,7 @@ from pathlib import Path
 import json
 import cv2
 
+
 class DonutMetadataGenerator:
     def generate(self, data_dir, files_list, split):
         base_img_dir = Path(data_dir) / "img"
@@ -11,19 +12,22 @@ class DonutMetadataGenerator:
         split_img_dir.mkdir(parents=True, exist_ok=True)
 
         metadata_list = []
+        ext = "jpeg" or "jpg"
 
         for file_name in files_list:
-            img_file = base_img_dir / f"{file_name.stem}.jpg"
+            img_file = base_img_dir / f"{file_name.stem}.{ext}"
             if img_file.exists():
                 img = cv2.imread(str(img_file))
-                cv2.imwrite(str(split_img_dir / f"{file_name.stem}.jpg"), img)
+                cv2.imwrite(str(split_img_dir / f"{file_name.stem}.{ext}"), img)
 
                 with open(file_name, "r") as json_file:
                     data = json.load(json_file)
-                    metadata_list.append({
-                        "ground_truth": json.dumps({"gt_parse": data}),
-                        "file_name": f"{file_name.stem}.jpg"
-                    })
+                    metadata_list.append(
+                        {
+                            "ground_truth": json.dumps({"gt_parse": data}),
+                            "file_name": f"{file_name.stem}.{ext}",
+                        }
+                    )
 
         with open(split_img_dir / "metadata.jsonl", "w") as outfile:
             for entry in metadata_list:

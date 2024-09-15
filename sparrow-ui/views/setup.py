@@ -10,11 +10,18 @@ class Setup:
     class Model:
         header1 = "Labels"
         header2 = "Groups"
+        header3 = "Sub Group"
         labels_file = "docs/labels.json"
         groups_file = "docs/groups.json"
+        subgroups_file = "docs/subgroups.json"
 
     def view(self, model):
-        tab = st.radio("Select", ["Labels", "Groups"], horizontal=True, label_visibility="collapsed")
+        tab = st.radio(
+            "Select",
+            ["Labels", "Groups", "Sub Group"],
+            horizontal=True,
+            label_visibility="collapsed",
+        )
 
         if tab == "Labels":
             st.title(model.header1)
@@ -22,11 +29,14 @@ class Setup:
         elif tab == "Groups":
             st.title(model.header2)
             self.setup_groups(model)
+        elif tab == "Sub Group":
+            st.title(model.header3)
+            self.setup_subgroups(model)
 
     def setup_labels(self, model):
         self.action_event = False
-        if 'action' not in st.session_state:
-            st.session_state['action'] = None
+        if "action" not in st.session_state:
+            st.session_state["action"] = None
 
         with open(model.labels_file, "r") as f:
             labels_json = json.load(f)
@@ -35,71 +45,82 @@ class Setup:
 
         data = []
         for label in labels:
-            data.append({'id': label['id'], 'name': label['name'], 'description': label['description']})
+            data.append(
+                {
+                    "id": label["id"],
+                    "name": label["name"],
+                    "description": label["description"],
+                }
+            )
         self.df = pd.DataFrame(data)
 
         formatter = {
-            'id': ('ID', {'hide': True}),
-            'name': ('Label', {**PINLEFT, 'editable': True}),
-            'description': ('Description', {**PINLEFT, 'editable': True})
+            "id": ("ID", {"hide": True}),
+            "name": ("Label", {**PINLEFT, "editable": True}),
+            "description": ("Description", {**PINLEFT, "editable": True}),
         }
 
         def run_component(props):
-            value = component_toolbar_buttons(key='toolbar_buttons_labels', **props)
+            value = component_toolbar_buttons(key="toolbar_buttons_labels", **props)
             return value
 
         def handle_event(value):
             if value is not None:
-                if 'action_timestamp' not in st.session_state:
+                if "action_timestamp" not in st.session_state:
                     self.action_event = True
-                    st.session_state['action_timestamp'] = value['timestamp']
+                    st.session_state["action_timestamp"] = value["timestamp"]
                 else:
-                    if st.session_state['action_timestamp'] != value['timestamp']:
+                    if st.session_state["action_timestamp"] != value["timestamp"]:
                         self.action_event = True
-                        st.session_state['action_timestamp'] = value['timestamp']
+                        st.session_state["action_timestamp"] = value["timestamp"]
                     else:
                         self.action_event = False
 
-            if value is not None and value['action'] == 'create' and self.action_event:
-                if st.session_state['action'] != 'delete':
-                    max_id = self.df['id'].max()
-                    self.df.loc[-1] = [max_id + 1, '', '']  # adding a row
+            if value is not None and value["action"] == "create" and self.action_event:
+                if st.session_state["action"] != "delete":
+                    max_id = self.df["id"].max()
+                    self.df.loc[-1] = [max_id + 1, "", ""]  # adding a row
                     self.df.index = self.df.index + 1  # shifting index
                     self.df.sort_index(inplace=True)
-                    st.session_state['action'] = 'create'
-            elif value is not None and value['action'] == 'delete' and self.action_event:
-                if st.session_state['action'] != 'delete' and st.session_state['action'] != 'create':
-                    rows = st.session_state['selected_rows']
+                    st.session_state["action"] = "create"
+            elif (
+                value is not None and value["action"] == "delete" and self.action_event
+            ):
+                if (
+                    st.session_state["action"] != "delete"
+                    and st.session_state["action"] != "create"
+                ):
+                    rows = st.session_state["selected_rows"]
                     if len(rows) > 0:
-                        idx = rows[0]['_selectedRowNodeInfo']['nodeRowIndex']
+                        idx = rows[0]["_selectedRowNodeInfo"]["nodeRowIndex"]
                         self.df.drop(self.df.index[idx], inplace=True)
                         self.df.reset_index(drop=True, inplace=True)
-                    st.session_state['action'] = 'delete'
-            elif value is not None and value['action'] == 'save' and self.action_event:
-                st.session_state['action'] = 'save'
+                    st.session_state["action"] = "delete"
+            elif value is not None and value["action"] == "save" and self.action_event:
+                st.session_state["action"] = "save"
 
         props = {
-            'buttons': {
-                'create': False,
-                'delete': False,
-                'save': False,
+            "buttons": {
+                "create": False,
+                "delete": False,
+                "save": False,
             }
         }
 
         handle_event(run_component(props))
 
-        if st.session_state['action'] == 'save' and 'response' in st.session_state:
-            if st.session_state['response'] is not None:
-                self.df = st.session_state['response']
-            st.session_state['response'] = None
+        if st.session_state["action"] == "save" and "response" in st.session_state:
+            if st.session_state["response"] is not None:
+                self.df = st.session_state["response"]
+            st.session_state["response"] = None
 
-        if st.session_state['action'] == 'create' and 'response' in st.session_state:
-            if st.session_state['response'] is not None:
-                self.df = st.session_state['response']
+        if st.session_state["action"] == "create" and "response" in st.session_state:
+            if st.session_state["response"] is not None:
+                self.df = st.session_state["response"]
 
-        if st.session_state['action'] == 'delete' and 'response' in st.session_state:
-            if st.session_state['response'] is not None:
-                self.df = st.session_state['response']
+        if st.session_state["action"] == "delete" and "response" in st.session_state:
+            if st.session_state["response"] is not None:
+                self.df = st.session_state["response"]
 
         response = agstyler.draw_grid(
             self.df,
@@ -107,31 +128,30 @@ class Setup:
             fit_columns=True,
             pagination_size=10,
             selection="single",
-            use_checkbox=False
+            use_checkbox=False,
         )
 
-        rows = response['selected_rows']
-        st.session_state['selected_rows'] = rows
+        rows = response["selected_rows"]
+        st.session_state["selected_rows"] = rows
 
-        if st.session_state['action'] == 'create' and self.action_event:
-            st.session_state['response'] = response['data']
-        elif st.session_state['action'] == 'delete' and self.action_event:
-            st.session_state['response'] = response['data']
-        elif st.session_state['action'] == 'save' and self.action_event:
-            data = response['data'].values.tolist()
+        if st.session_state["action"] == "create" and self.action_event:
+            st.session_state["response"] = response["data"]
+        elif st.session_state["action"] == "delete" and self.action_event:
+            st.session_state["response"] = response["data"]
+        elif st.session_state["action"] == "save" and self.action_event:
+            data = response["data"].values.tolist()
             rows = []
             for row in data:
-                rows.append({'id': row[0], 'name': row[1], 'description': row[2]})
+                rows.append({"id": row[0], "name": row[1], "description": row[2]})
 
-            labels_json['labels'] = rows
+            labels_json["labels"] = rows
             with open(model.labels_file, "w") as f:
                 json.dump(labels_json, f, indent=2)
 
-
     def setup_groups(self, model):
         self.action_event = False
-        if 'action' not in st.session_state:
-            st.session_state['action'] = None
+        if "action" not in st.session_state:
+            st.session_state["action"] = None
 
         with open(model.groups_file, "r") as f:
             groups_json = json.load(f)
@@ -140,71 +160,82 @@ class Setup:
 
         data = []
         for group in groups:
-            data.append({'id': group['id'], 'name': group['name'], 'description': group['description']})
+            data.append(
+                {
+                    "id": group["id"],
+                    "name": group["name"],
+                    "description": group["description"],
+                }
+            )
         self.df = pd.DataFrame(data)
 
         formatter = {
-            'id': ('ID', {'hide': True}),
-            'name': ('Group', {**PINLEFT, 'editable': True}),
-            'description': ('Description', {**PINLEFT, 'editable': True})
+            "id": ("ID", {"hide": True}),
+            "name": ("Group", {**PINLEFT, "editable": True}),
+            "description": ("Description", {**PINLEFT, "editable": True}),
         }
 
         def run_component(props):
-            value = component_toolbar_buttons(key='toolbar_buttons_groups', **props)
+            value = component_toolbar_buttons(key="toolbar_buttons_groups", **props)
             return value
 
         def handle_event(value):
             if value is not None:
-                if 'action_timestamp' not in st.session_state:
+                if "action_timestamp" not in st.session_state:
                     self.action_event = True
-                    st.session_state['action_timestamp'] = value['timestamp']
+                    st.session_state["action_timestamp"] = value["timestamp"]
                 else:
-                    if st.session_state['action_timestamp'] != value['timestamp']:
+                    if st.session_state["action_timestamp"] != value["timestamp"]:
                         self.action_event = True
-                        st.session_state['action_timestamp'] = value['timestamp']
+                        st.session_state["action_timestamp"] = value["timestamp"]
                     else:
                         self.action_event = False
 
-            if value is not None and value['action'] == 'create' and self.action_event:
-                if st.session_state['action'] != 'delete':
-                    max_id = self.df['id'].max()
-                    self.df.loc[-1] = [max_id + 1, '', '']  # adding a row
+            if value is not None and value["action"] == "create" and self.action_event:
+                if st.session_state["action"] != "delete":
+                    max_id = self.df["id"].max()
+                    self.df.loc[-1] = [max_id + 1, "", ""]  # adding a row
                     self.df.index = self.df.index + 1  # shifting index
                     self.df.sort_index(inplace=True)
-                    st.session_state['action'] = 'create'
-            elif value is not None and value['action'] == 'delete' and self.action_event:
-                if st.session_state['action'] != 'delete' and st.session_state['action'] != 'create':
-                    rows = st.session_state['selected_rows']
+                    st.session_state["action"] = "create"
+            elif (
+                value is not None and value["action"] == "delete" and self.action_event
+            ):
+                if (
+                    st.session_state["action"] != "delete"
+                    and st.session_state["action"] != "create"
+                ):
+                    rows = st.session_state["selected_rows"]
                     if len(rows) > 0:
-                        idx = rows[0]['_selectedRowNodeInfo']['nodeRowIndex']
+                        idx = rows[0]["_selectedRowNodeInfo"]["nodeRowIndex"]
                         self.df.drop(self.df.index[idx], inplace=True)
                         self.df.reset_index(drop=True, inplace=True)
-                    st.session_state['action'] = 'delete'
-            elif value is not None and value['action'] == 'save' and self.action_event:
-                st.session_state['action'] = 'save'
+                    st.session_state["action"] = "delete"
+            elif value is not None and value["action"] == "save" and self.action_event:
+                st.session_state["action"] = "save"
 
         props = {
-            'buttons': {
-                'create': False,
-                'delete': False,
-                'save': False,
+            "buttons": {
+                "create": False,
+                "delete": False,
+                "save": False,
             }
         }
 
         handle_event(run_component(props))
 
-        if st.session_state['action'] == 'save' and 'response' in st.session_state:
-            if st.session_state['response'] is not None:
-                self.df = st.session_state['response']
-            st.session_state['response'] = None
+        if st.session_state["action"] == "save" and "response" in st.session_state:
+            if st.session_state["response"] is not None:
+                self.df = st.session_state["response"]
+            st.session_state["response"] = None
 
-        if st.session_state['action'] == 'create' and 'response' in st.session_state:
-            if st.session_state['response'] is not None:
-                self.df = st.session_state['response']
+        if st.session_state["action"] == "create" and "response" in st.session_state:
+            if st.session_state["response"] is not None:
+                self.df = st.session_state["response"]
 
-        if st.session_state['action'] == 'delete' and 'response' in st.session_state:
-            if st.session_state['response'] is not None:
-                self.df = st.session_state['response']
+        if st.session_state["action"] == "delete" and "response" in st.session_state:
+            if st.session_state["response"] is not None:
+                self.df = st.session_state["response"]
 
         response = agstyler.draw_grid(
             self.df,
@@ -212,22 +243,137 @@ class Setup:
             fit_columns=True,
             pagination_size=10,
             selection="single",
-            use_checkbox=False
+            use_checkbox=False,
         )
 
-        rows = response['selected_rows']
-        st.session_state['selected_rows'] = rows
+        rows = response["selected_rows"]
+        st.session_state["selected_rows"] = rows
 
-        if st.session_state['action'] == 'create' and self.action_event:
-            st.session_state['response'] = response['data']
-        elif st.session_state['action'] == 'delete' and self.action_event:
-            st.session_state['response'] = response['data']
-        elif st.session_state['action'] == 'save' and self.action_event:
-            data = response['data'].values.tolist()
+        if st.session_state["action"] == "create" and self.action_event:
+            st.session_state["response"] = response["data"]
+        elif st.session_state["action"] == "delete" and self.action_event:
+            st.session_state["response"] = response["data"]
+        elif st.session_state["action"] == "save" and self.action_event:
+            data = response["data"].values.tolist()
             rows = []
             for row in data:
-                rows.append({'id': row[0], 'name': row[1], 'description': row[2]})
+                rows.append({"id": row[0], "name": row[1], "description": row[2]})
 
-            groups_json['groups'] = rows
+            groups_json["groups"] = rows
             with open(model.groups_file, "w") as f:
                 json.dump(groups_json, f, indent=2)
+
+    def setup_subgroups(self, model):
+        self.action_event = False
+        if "action" not in st.session_state:
+            st.session_state["action"] = None
+
+        with open(model.subgroups_file, "r") as f:
+            subgroups_json = json.load(f)
+
+        subgroups = subgroups_json["subgroups"]
+
+        data = []
+        for subgroup in subgroups:
+            data.append(
+                {
+                    "id": subgroup["id"],
+                    "name": subgroup["name"],
+                    "description": subgroup["description"],
+                }
+            )
+        self.df = pd.DataFrame(data)
+
+        formatter = {
+            "id": ("ID", {"hide": True}),
+            "name": ("Sub Group", {**PINLEFT, "editable": True}),
+            "description": ("Description", {**PINLEFT, "editable": True}),
+        }
+
+        def run_component(props):
+            value = component_toolbar_buttons(key="toolbar_buttons_groups", **props)
+            return value
+
+        def handle_event(value):
+            if value is not None:
+                if "action_timestamp" not in st.session_state:
+                    self.action_event = True
+                    st.session_state["action_timestamp"] = value["timestamp"]
+                else:
+                    if st.session_state["action_timestamp"] != value["timestamp"]:
+                        self.action_event = True
+                        st.session_state["action_timestamp"] = value["timestamp"]
+                    else:
+                        self.action_event = False
+
+            if value is not None and value["action"] == "create" and self.action_event:
+                if st.session_state["action"] != "delete":
+                    max_id = self.df["id"].max()
+                    self.df.loc[-1] = [max_id + 1, "", ""]  # adding a row
+                    self.df.index = self.df.index + 1  # shifting index
+                    self.df.sort_index(inplace=True)
+                    st.session_state["action"] = "create"
+            elif (
+                value is not None and value["action"] == "delete" and self.action_event
+            ):
+                if (
+                    st.session_state["action"] != "delete"
+                    and st.session_state["action"] != "create"
+                ):
+                    rows = st.session_state["selected_rows"]
+                    if len(rows) > 0:
+                        idx = rows[0]["_selectedRowNodeInfo"]["nodeRowIndex"]
+                        self.df.drop(self.df.index[idx], inplace=True)
+                        self.df.reset_index(drop=True, inplace=True)
+                    st.session_state["action"] = "delete"
+            elif value is not None and value["action"] == "save" and self.action_event:
+                st.session_state["action"] = "save"
+
+        props = {
+            "buttons": {
+                "create": False,
+                "delete": False,
+                "save": False,
+            }
+        }
+
+        handle_event(run_component(props))
+
+        if st.session_state["action"] == "save" and "response" in st.session_state:
+            if st.session_state["response"] is not None:
+                self.df = st.session_state["response"]
+            st.session_state["response"] = None
+
+        if st.session_state["action"] == "create" and "response" in st.session_state:
+            if st.session_state["response"] is not None:
+                self.df = st.session_state["response"]
+
+        if st.session_state["action"] == "delete" and "response" in st.session_state:
+            if st.session_state["response"] is not None:
+                self.df = st.session_state["response"]
+
+        response = agstyler.draw_grid(
+            self.df,
+            formatter=formatter,
+            fit_columns=True,
+            pagination_size=10,
+            selection="single",
+            use_checkbox=False,
+        )
+
+        rows = response["selected_rows"]
+        st.session_state["selected_rows"] = rows
+
+        if st.session_state["action"] == "create" and self.action_event:
+            st.session_state["response"] = response["data"]
+        elif st.session_state["action"] == "delete" and self.action_event:
+            st.session_state["response"] = response["data"]
+        elif st.session_state["action"] == "save" and self.action_event:
+            data = response["data"].values.tolist()
+            rows = []
+            for row in data:
+                rows.append({"id": row[0], "name": row[1], "description": row[2]})
+
+            subgroups_json["subgroups"] = rows
+            with open(model.subgroups_file, "w") as f:
+                json.dump(subgroups_json, f, indent=2)
